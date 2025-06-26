@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Catálogo de Productos</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="carrusel.css">
+</head>
+<body>
+  <div class="video-fondo">
+    <video autoplay muted loop playsinline>
+      <source src="videos/fondo.mp4" type="video/mp4">
+    </video>
+  </div>
+  <div class="main-container">
+    <h1>Catálogo de Productos de última novedad</h1>
+    <div class="container">
+      <div class="box">
+        <span style="--i:1;" data-product="1"><img src="Imagenes/Smartphone Xiaomi Redmi Note 13 Pro.png" alt="Smartphone Xiaomi Redmi Note 13 Pro"></span>
+        <span style="--i:2;" data-product="2"><img src="Imagenes/Laptop ASUS VivoBook OLED.png" alt="Laptop ASUS VivoBook OLED"></span>
+        <span style="--i:3;" data-product="3"><img src="Imagenes/Auriculares Sony WH-CH720N.png" alt="Auriculares Sony WH-CH720N"></span>
+        <span style="--i:4;" data-product="4"><img src="Imagenes/Smartwatch Huawei Watch Fit 2.png" alt="Smartwatch Huawei Watch Fit 2"></span>
+        <span style="--i:5;" data-product="5"><img src="Imagenes/Mini proyector portátil YG300 Pro.png" alt="Mini proyector portátil YG300 Pro"></span>
+        <span style="--i:6;" data-product="6"><img src="Imagenes/Base de enfriamiento RGB para laptop.png" alt="Base de enfriamiento"></span>
+        <span style="--i:7;" data-product="7"><img src="Imagenes/Teclado inalámbrico retroiluminado tipo máquina de escribir.png" alt="Teclado inalámbrico"></span>
+        <span style="--i:8;" data-product="8"><img src="Imagenes/Cámara web 1080p con micrófono.png" alt="Cámara web 1080p con micrófono"></span>
+      </div>
+      <div class="btns">
+        <div class="btn prev"></div>
+        <div class="btn next"></div>
+      </div>
+    </div>
+    <div class="product-detail" id="product-1">
+      <div class="detail-content">
+        <div class="detail-image">
+          <img src="Imagenes/Smartphone Xiaomi Redmi Note 13 Pro.png" alt="Smartphone Xiaomi Redmi Note 13 Pro">
+        </div>
+        <div class="detail-info">
+          <h2>Smartphone Xiaomi Redmi Note 13 Pro</h2>
+          <div class="price">$370.00</div>
+          <p class="description">Un teléfono de gama media-alta con características premium.</p>
+          <ul class="features">
+            <li>Cámara principal de 200 MP con estabilización OIS</li>
+            <li>Pantalla AMOLED 6.67” FHD+ a 120 Hz</li>
+            <li>Procesador Snapdragon 7s Gen 2</li>
+            <li>Batería 5100 mAh con carga rápida de 67W</li>
+            <li>8 GB RAM + 256 GB de almacenamiento</li>
+          </ul>
+          <a href="#" class="back-to-top">Volver al catálogo</a>
+        </div>
+      </div>
+    </div>
+    <div class="product-detail" id="product-2">
+      <div class="detail-content">
+        <div class="detail-image">
+          <img src="Imagenes/Laptop ASUS VivoBook OLED.png" alt="Laptop ASUS VivoBook OLED">
+        </div>
+        <div class="detail-info">
+          <h2>Laptop ASUS VivoBook OLED</h2>
+          <div class="price">$750.00</div>
+          <p class="description">Ligera, potente y con pantalla ideal para trabajo visual.</p>
+          <ul class="features">
+            <li>Pantalla OLED 15.6” Full HD con alta precisión de color</li>
+            <li>Procesador AMD Ryzen 7 7730U</li>
+            <li>16 GB de RAM + SSD de 512 GB</li>
+            <li>WiFi 6 y Bluetooth 5.1</li>
+            <li>Diseño ultraligero y teclado retroiluminado</li>
+          </ul>
+          <a href="#" class="back-to-top">Volver al catálogo</a>
+        </div>
+      </div>
+    </div>
+    <div class="product-detail" id="product-3">
+      <div class="detail-content">
+        <div class="detail-image">
+          <img src="Imagenes/Auriculares Sony WH-CH720N.png" alt="Auriculares Sony WH-CH720N">
+        </div>
+        <div class="detail-info">
+          <h2>Auriculares Sony WH-CH720N</h2>
+          <div class="price">$140.00</div>
+          <p class="description">Comodidad, sonido envolvente y silencio donde lo necesites.</p>
+          <ul class="features">
+            <li>Cancelación activa de ruido (ANC)</li>
+            <li>Hasta 35 horas de batería</li>
+            <li>Carga rápida (3 min = 1h)</li>
+            <li>Bluetooth multipunto</li>
+            <li>Micrófono con reducción de ruido</li>
+          </ul>
+          <a href="#" class="back-to-top">Volver al catálogo</a>
+        </div>
+      </div>
+    </div>
+    <div class="product-detail" id="product-4">
+      <div class="detail-content">
+        <div class="detail-image">
+          <img src="Imagenes/Smartwatch Huawei Watch Fit 2.png" alt="Smartwatch Huawei Watch Fit 2">
+        </div>
+        <div class="detail-info">
+          <h2>Smartwatch Huawei Watch Fit 2</h2>
+          <div class="price">$160.00</div>
+          <p class="description">Estilo moderno con enfoque en salud y deporte.</p>
+          <ul class="features">
+            <li>Pantalla AMOLED 1.74” táctil</li>
+            <li>GPS integrado</li>
+            <li>97 modos deportivos</li>
+            <li>Sensor de ritmo cardíaco y SpO2</li>
+            <li>Llamadas por Bluetooth + notificaciones inteligentes</li>
+          </ul>
+          <a href="#" class="back-to-top">Volver al catálogo</a>
+        </div>
+      </div>
+    </div>
+    <div class="product-detail" id="product-5">
+      <div class="detail-content">
+        <div class="detail-image">
+          <img src="Imagenes/Mini proyector portátil YG300 Pro.png" alt="Mini proyector portátil YG300 Pro">
+        </div>
+        <div class="detail-info">
+          <h2>Mini proyector portátil YG300 Pro</h2>
+          <div class="price">$90.00</div>
+          <p class="description">Un cine de bolsillo para cualquier lugar.</p>
+          <ul class="features">
+            <li>Compatible con 1080p, resolución nativa 480p</li>
+            <li>Entradas USB, HDMI, AV y microSD</li>
+            <li>Diseño compacto y liviano</li>
+            <li>Ideal para películas, clases o presentaciones</li>
+            <li>Altavoz incorporado</li>
+          </ul>
+          <a href="#" class="back-to-top">Volver al catálogo</a>
+        </div>
+      </div>
+    </div>
+    <div class="product-detail" id="product-6">
+      <div class="detail-content">
+        <div class="detail-image">
+          <img src="Imagenes/Base de enfriamiento RGB para laptop.png" alt="Base de enfriamiento RGB para laptop">
+        </div>
+        <div class="detail-info">
+          <h2>Base de enfriamiento RGB para laptop</h2>
+          <div class="price">$35.00</div>
+          <p class="description">Estabilidad térmica con estilo gamer.</p>
+          <ul class="features">
+            <li>5 ventiladores silenciosos</li>
+            <li>Luces LED RGB integradas</li>
+            <li>Altura ajustable</li>
+            <li>Soporta laptops hasta 17”</li>
+            <li>Conexión USB doble</li>
+          </ul>
+          <a href="#" class="back-to-top">Volver al catálogo</a>
+        </div>
+      </div>
+    </div>
+    <div class="product-detail" id="product-7">
+      <div class="detail-content">
+        <div class="detail-image">
+          <img src="Imagenes/Teclado inalámbrico retroiluminado tipo máquina de escribir.png" alt="Teclado inalámbrico">
+        </div>
+        <div class="detail-info">
+          <h2>Teclado inalámbrico tipo máquina de escribir</h2>
+          <div class="price">$60.00</div>
+          <p class="description">Estética retro con tecnología moderna.</p>
+          <ul class="features">
+            <li>Diseño vintage con teclas redondas</li>
+            <li>Conexión Bluetooth y USB</li>
+            <li>Retroiluminación LED</li>
+            <li>Batería recargable</li>
+            <li>Compatible con PC, Mac, tablets y móviles</li>
+          </ul>
+          <a href="#" class="back-to-top">Volver al catálogo</a>
+        </div>
+      </div>
+    </div>
+    <div class="product-detail" id="product-8">
+      <div class="detail-content">
+        <div class="detail-image">
+          <img src="Imagenes/Cámara web 1080p con micrófono.png" alt="Cámara web 1080p con micrófono">
+        </div>
+        <div class="detail-info">
+          <h2>Cámara web 1080p con micrófono</h2>
+          <div class="price">$40.00</div>
+          <p class="description">Videollamadas claras y sin interrupciones.</p>
+          <ul class="features">
+            <li>Resolución Full HD 1080p</li>
+            <li>Micrófono integrado con reducción de ruido</li>
+            <li>Plug and play (sin drivers)</li>
+            <li>Clip ajustable para monitores y trípodes</li>
+            <li>Ideal para clases, conferencias o streaming</li>
+          </ul>
+          <a href="#" class="back-to-top">Volver al catálogo</a>
+        </div>
+      </div>
+    </div>
+    <div class="nav-buttons">
+      <a href="index.html" class="nav-btn">
+        <i class='bx bx-home'></i>
+        <span>Inicio</span>
+      </a>
+    </div>
+  </div>
+  <script>
+    const prev = document.querySelector('.prev');
+    const next = document.querySelector('.next');
+    const box = document.querySelector('.box');
+    let degrees = 0;
+    prev.addEventListener('click', () => {
+      degrees += 45;
+      box.style.transform = `perspective(1000px) rotateY(${degrees}deg)`;
+    });
+    next.addEventListener('click', () => {
+      degrees -= 45;
+      box.style.transform = `perspective(1000px) rotateY(${degrees}deg)`;
+    });
+    const productSpans = document.querySelectorAll('.box span');
+    const productDetails = document.querySelectorAll('.product-detail');
+    const backToTopLinks = document.querySelectorAll('.back-to-top');
+    productSpans.forEach(span => {
+      span.addEventListener('click', () => {
+        const productId = span.getAttribute('data-product');
+        productDetails.forEach(detail => {
+          detail.classList.remove('active');
+        });
+        const selectedDetail = document.getElementById(`product-${productId}`);
+        selectedDetail.classList.add('active');
+        selectedDetail.scrollIntoView({ behavior: 'smooth' });
+      });
+    });
+    backToTopLinks.forEach(link => {
+      link.addEventListener('click', (e) => {
+        e.preventDefault();
+        document.querySelector('.main-container').scrollIntoView({ behavior: 'smooth' });
+        productDetails.forEach(detail => {
+          detail.classList.remove('active');
+        });
+      });
+    });
+  </script>
+</body>
+</html>

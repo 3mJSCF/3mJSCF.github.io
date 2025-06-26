@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Servicios y Soporte</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="servicesupport.css">
+</head>
+<body>
+    <div class="video-fondo">
+    <video autoplay muted loop playsinline>
+      <source src="Videos/Fondo.mp4" type="video/mp4" />
+    </video>
+  </div>
+  <header>
+    <div class="container">
+      <a href="index.html" class="back-btn">
+        ← Volver al Inicio
+      </a>
+    </div>
+  </header>
+  
+  <div class="container">
+    <section class="hero">
+      <h1>Servicios y Soporte</h1>
+      <p>Soluciones técnicas y asistencia para nuestros clientes</p>
+    </section>
+    
+    <section class="services-section">
+      <h2 class="section-title">Nuestros Servicios</h2>
+      <div class="services-grid">
+        <div class="service-card">
+          <h3>Instalación y Configuración</h3>
+          <p>Configuración profesional de dispositivos electrónicos para un rendimiento óptimo desde el primer día.</p>
+        </div>
+        
+        <div class="service-card">
+          <h3>Mantenimiento Preventivo</h3>
+          <p>Revisiones periódicas para mantener tus equipos funcionando al máximo rendimiento.</p>
+        </div>
+        
+        <div class="service-card">
+          <h3>Reparaciones Técnicas</h3>
+          <p>Soluciones rápidas y efectivas para fallas en dispositivos electrónicos.</p>
+        </div>
+      </div>
+    </section>
+    
+    <section class="support-section">
+      <h2 class="section-title">Soporte Técnico</h2>
+      <div class="support-options">
+        <div class="support-card">
+          <h3>Soporte en Línea</h3>
+          <p>Asistencia remota inmediata para resolver problemas técnicos.</p>
+          <a href="#" class="support-btn">Chat en Vivo</a>
+        </div>
+        
+        <div class="support-card">
+          <h3>Soporte Telefónico</h3>
+          <p>Atención personalizada por nuestros técnicos especializados.</p>
+          <a href="#" class="support-btn">Llamar Ahora</a>
+        </div>
+        
+        <div class="support-card">
+          <h3>Soporte Presencial</h3>
+          <p>Servicio técnico a domicilio para problemas que requieren atención física.</p>
+          <a href="#" class="support-btn">Agendar Visita</a>
+        </div>
+      </div>
+    </section>
+    
+    <section class="faq-section">
+      <h2 class="section-title">Preguntas Frecuentes</h2>
+      <div class="faq-list">
+        <div class="faq-item">
+          <div class="faq-question">¿Cuál es el tiempo de respuesta para soporte?</div>
+          <div class="faq-answer">
+            <p>Nuestro tiempo promedio de respuesta para soporte en línea es de 15 minutos, mientras que para soporte presencial ofrecemos visitas dentro de las 24 horas hábiles.</p>
+          </div>
+        </div>
+        
+        <div class="faq-item">
+          <div class="faq-question">¿Tienen garantía los servicios?</div>
+          <div class="faq-answer">
+            <p>Todos nuestros servicios tienen una garantía de 30 días. Si el problema persiste, realizaremos las correcciones necesarias sin costo adicional.</p>
+          </div>
+        </div>
+        
+        <div class="faq-item">
+          <div class="faq-question">¿Qué métodos de pago aceptan?</div>
+          <div class="faq-answer">
+            <p>Aceptamos todas las tarjetas de crédito/débito, transferencias bancarias y pagos en efectivo al momento del servicio.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <script>
+    document.querySelectorAll('.faq-question').forEach(question => {
+      question.addEventListener('click', () => {
+        const item = question.parentNode;
+        item.classList.toggle('active');
+
+        document.querySelectorAll('.faq-item').forEach(otherItem => {
+          if (otherItem !== item && otherItem.classList.contains('active')) {
+            otherItem.classList.remove('active');
+          }
+        });
+      });
+    });
+  </script>
+</body>
+</html>

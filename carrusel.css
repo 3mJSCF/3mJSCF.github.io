@@ -1,0 +1,262 @@
+    body {
+      font-family: 'Poppins', sans-serif;
+      color: #fff;
+      position: relative;
+      z-index: 1;
+      min-height: 100vh;
+    }
+    .video-fondo {
+      position: fixed;
+      top: 0;
+      left: 0;
+      height: 100vh;
+      width: 100vw;
+      overflow: hidden;
+      z-index: -1;
+    }
+    .video-fondo video {
+      min-width: 100%;
+      min-height: 100%;
+      object-fit: cover;
+    }
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    .main-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 40px 20px;
+      min-height: 100vh;
+    }
+    h1 {
+      font-size: 2.5em;
+      margin-bottom: 50px;
+      letter-spacing: 2px;
+      text-shadow: 2px 2px 8px #000;
+      text-align: center;
+    }
+    .container {
+      position: relative;
+      margin-bottom: 50px;
+    }
+    .box {
+      position: relative;
+      width: 200px;
+      height: 200px;
+      transform-style: preserve-3d;
+      transition: 1.5s;
+      transform: perspective(1000px) rotateY(0deg);
+    }
+    .box span {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      transform-origin: center;
+      transform-style: preserve-3d;
+      transform: rotateY(calc(var(--i) * 45deg)) translateZ(300px);
+      -webkit-box-reflect: below 10px linear-gradient(transparent, transparent, #0007);
+      cursor: pointer;
+      transition: transform 0.3s;
+    }
+    .box span:hover {
+      transform: rotateY(calc(var(--i) * 45deg)) translateZ(350px);
+    }
+    .box span img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      user-select: none;
+      border-radius: 12px;
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+    }
+    .btns {
+      position: absolute;
+      bottom: -80px;
+      left: 50%;
+      transform: translateX(-50%);
+      display: flex;
+      gap: 30px;
+      z-index: 2;
+    }
+    .btns .btn {
+      width: 60px;
+      height: 60px;
+      border: 2px solid #fff;
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
+      transition: all 0.3s;
+      background: rgba(0, 0, 0, 0.3);
+    }
+    .btns .btn:hover {
+      background: rgba(255, 255, 255, 0.2);
+    }
+    .btns .btn:active {
+      background: #fff;
+    }
+    .btns .btn::before {
+      content: '';
+      position: absolute;
+      width: 15px;
+      height: 15px;
+      border-top: 3px solid #fff;
+      border-right: 3px solid #fff;
+      transform: rotate(45deg) translate(-2.5px, 2.5px);
+      transition: 0.3s;
+    }
+    .btns .btn.prev::before {
+      transform: rotate(225deg) translate(-2.5px, 2.5px);
+    }
+    .btns .btn:active::before {
+      border-top: 3px solid #000;
+      border-right: 3px solid #000;
+    }
+    .product-detail {
+      max-width: 900px;
+      margin: 100px auto;
+      padding: 30px;
+      background: rgba(0, 0, 0, 0.7);
+      border-radius: 15px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+      display: none;
+      opacity: 0;
+      transition: opacity 0.5s ease;
+    }
+    .product-detail.active {
+      display: block;
+      opacity: 1;
+    }
+    .detail-content {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 30px;
+    }
+    .detail-image {
+      flex: 1;
+      min-width: 300px;
+    }
+    .detail-image img {
+      width: 100%;
+      border-radius: 10px;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    }
+    .detail-info {
+      flex: 1;
+      min-width: 300px;
+    }
+    .detail-info h2 {
+      font-size: 2em;
+      margin-bottom: 15px;
+      color: #ff4321;
+    }
+    .detail-info .price {
+      font-size: 1.8em;
+      font-weight: bold;
+      color: #4CAF50;
+      margin: 15px 0;
+    }
+    .detail-info .description {
+      line-height: 1.6;
+      margin-bottom: 20px;
+    }
+    .features {
+      margin: 20px 0;
+    }
+    .features li {
+      margin-bottom: 10px;
+      list-style-type: none;
+      position: relative;
+      padding-left: 25px;
+    }
+    .features li:before {
+      content: '✓';
+      color: #4CAF50;
+      position: absolute;
+      left: 0;
+    }
+    .back-to-top {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 10px 20px;
+      background: #ff4321;
+      color: white;
+      border-radius: 5px;
+      text-decoration: none;
+      transition: background 0.3s;
+    }
+    .back-to-top:hover {
+      background: #e03a1e;
+    }
+    .nav-buttons {
+      position: fixed;
+      bottom: 30px;
+      right: 30px;
+      display: flex;
+      gap: 15px;
+      z-index: 10;
+    }
+    .nav-btn {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 12px 20px;
+      background-color: rgba(149, 22, 0, 0.8);
+      color: white;
+      border-radius: 30px;
+      text-decoration: none;
+      font-size: 1.1em;
+      transition: all 0.3s ease;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+      border: 1px solid rgba(255, 255, 255, 0.2);
+    }
+    .nav-btn:hover {
+      background-color: #ff4321;
+      transform: translateY(-3px);
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
+    }
+    .nav-btn i {
+      margin-right: 8px;
+      font-size: 1.2em;
+    }
+    @media (max-width: 768px) {
+      h1 {
+        font-size: 1.8em;
+        margin-bottom: 30px;
+      }
+      .box {
+        width: 150px;
+        height: 150px;
+      }
+      .box span {
+        transform: rotateY(calc(var(--i) * 45deg)) translateZ(200px);
+      }
+      .btns {
+        bottom: -60px;
+      }
+      .btns .btn {
+        width: 50px;
+        height: 50px;
+      }
+      .nav-buttons {
+        bottom: 20px;
+        right: 20px;
+        flex-direction: column;
+      }
+      .product-detail {
+        margin: 50px auto;
+        padding: 20px;
+      }
+      .detail-content {
+        flex-direction: column;
+      }
+    }

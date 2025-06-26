@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contacto - DigitalPoint</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="contacto.css">
+</head>
+<body>
+    <div class="video-fondo">
+    <video autoplay muted loop playsinline>
+      <source src="Videos/Fondo.mp4" type="video/mp4" />
+    </video>
+  </div>
+  <header>
+    <div class="container">
+      <a href="index.html" class="back-btn">
+        <i class="fas fa-arrow-left"></i> Volver al Inicio
+      </a>
+    </div>
+  </header>
+  
+  <div class="container">
+    <section class="hero">
+      <h1>Contáctanos</h1>
+      <p>Estamos aquí para ayudarte. Envíanos un mensaje o contáctanos directamente.</p>
+    </section>
+    
+    <div class="contact-content">
+      <div class="contact-info">
+        <div class="info-section">
+          <h2 class="info-title">
+            <i class="fas fa-map-marker-alt"></i> Dirección
+          </h2>
+          <div class="info-detail">
+            <i class="fas fa-building"></i>
+            <p>Calle Principal #123, Avenida cívica <br>Ciudad de Llallagua, CDMX 06000</p>
+          </div>
+        </div>
+        
+        <div class="info-section">
+          <h2 class="info-title">
+            <i class="fas fa-clock"></i> Horario de Atención
+          </h2>
+          <div class="info-detail">
+            <i class="fas fa-calendar-alt"></i>
+            <p>Lunes a Viernes: 8:00 am - 6:00 pm<br>Sábados: 10:00 am - 2:00 pm<br>Domingos: Cerrado</p>
+          </div>
+        </div>
+        
+        <div class="info-section">
+          <h2 class="info-title">
+            <i class="fas fa-envelope"></i> Correo Electrónico
+          </h2>
+          <div class="info-detail">
+            <i class="fas fa-inbox"></i>
+            <p>digitalpoint@gmail.com<br>soporte@gmail.com</p>
+          </div>
+        </div>
+        
+        <div class="info-section">
+          <h2 class="info-title">
+            <i class="fas fa-phone-alt"></i> Teléfono
+          </h2>
+          <div class="info-detail">
+            <i class="fas fa-mobile-alt"></i>
+            <p>+591 68914044<br>+591 80123457</p>
+          </div>
+        </div>
+        
+        <div class="info-section">
+          <h2 class="info-title">
+            <i class="fas fa-hashtag"></i> Redes Sociales
+          </h2>
+          <div class="social-media">
+            <a href="#" class="social-link" aria-label="Facebook">
+              <i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="#" class="social-link" aria-label="Instagram">
+              <i class="fab fa-instagram"></i>
+            </a>
+            <a href="#" class="social-link" aria-label="Twitter">
+              <i class="fab fa-twitter"></i>
+            </a>
+            <a href="#" class="social-link" aria-label="LinkedIn">
+              <i class="fab fa-linkedin-in"></i>
+            </a>
+            <a href="#" class="social-link" aria-label="WhatsApp">
+              <i class="fab fa-whatsapp"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+      
+      <div class="contact-form">
+        <h2 class="form-title">Formulario de Contacto</h2>
+        <form id="contactForm">
+          <div class="form-group">
+            <label for="name">Nombre completo</label>
+            <input type="text" id="name" class="form-control" required>
+          </div>
+          
+          <div class="form-group">
+            <label for="email">Correo electrónico</label>
+            <input type="email" id="email" class="form-control" required>
+          </div>
+          
+          <div class="form-group">
+            <label for="phone">Teléfono (opcional)</label>
+            <input type="tel" id="phone" class="form-control">
+          </div>
+          
+          <div class="form-group">
+            <label for="subject">Asunto</label>
+            <select id="subject" class="form-control" required>
+              <option value="" disabled selected>Selecciona una opción</option>
+              <option value="ventas">Consulta de ventas</option>
+              <option value="soporte">Soporte técnico</option>
+              <option value="cotizacion">Cotización</option>
+              <option value="otro">Otro</option>
+            </select>
+          </div>
+          
+          <div class="form-group">
+            <label for="message">Mensaje</label>
+            <textarea id="message" class="form-control" required></textarea>
+          </div>
+          
+          <button type="submit" class="submit-btn">
+            <i class="fas fa-paper-plane"></i> Enviar Mensaje
+          </button>
+        </form>
+      </div>
+    </div>
+</body>
+</html>
